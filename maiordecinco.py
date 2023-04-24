@@ -6,13 +6,13 @@ e = int(input())
 
 maior = a
 
-if b > maior and b > c and b > d and b > e:
+if b > maior:
     maior = b
-elif c > maior and c > b and c > d and c > e:
+if c > maior:
     maior = c
-elif d > maior and d > b and d > c and d > e:
+if d > maior:
     maior = d
-elif e > maior and e > b and e > c and e > d:
+if e > maior:
     maior = e
 
 print(maior)
