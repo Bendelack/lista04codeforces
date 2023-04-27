@@ -1,55 +1,12 @@
 a, b, c, d = map(int,input().split())
 
-if a + b <= c:
+if a + b > c and a + c > b and b + c > a:
     print('S')
-elif a + b <= d:
+elif a + b > d and a + d > b and b + d > a:
     print('S')
-elif a + c <= b:
+elif a + c > d and c + d > a and a + d > c:
     print('S')
-elif a + c <= d:
-    print('S')
-elif a + d <= b:
-    print('S')
-elif a + d <= c:
-    print('S')
-
-elif b + a <= c:
-    print('S')
-elif b + a <= d:
-    print('S')
-elif b + c <= a:
-    print('S')
-elif b + c <= d:
-    print('S')
-elif b + d <= c:
-    print('S')
-elif b + d <= a:
-    print('S')
-
-elif c + b <= a:
-    print('S')
-elif c + b <= d:
-    print('S')
-elif c + a <= b:
-    print('S')
-elif c + a <= d:
-    print('S')
-elif c + d <= a:
-    print('S')
-elif c + d <= b:
-    print('S')
-
-elif d + b <= c:
-    print('S')
-elif d + b <= a:
-    print('S')
-elif d + c <= b:
-    print('S')
-elif d + c <= a:
-    print('S')
-elif d + a <= c:
-    print('S')
-elif d + a <= b:
+elif b + c > d and b + d > c and c + d > b:
     print('S')
 else:
     print('N')
